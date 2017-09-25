@@ -1,0 +1,3 @@
+# RABC_permissions_system
+这是一个RBAC模型，里面的脚色权限系统总共4张原生，2张多对多表，
+还有django自带的modleform表单功能
