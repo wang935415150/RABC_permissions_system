@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="/rbac/user/add.html">添加</a>
+    <table border="1">
+        {% for row in user_list %}
+            <tr>
+                <td>{{ row.pk }}</td>
+                <td>{{ row.nickname }}</td>
+                <td>{{ row.username }}</td>
+                <td>
+                    <a href="/rbac/user/edit/{{ row.pk }}.html">编辑</a>
+                </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
